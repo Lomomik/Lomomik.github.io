@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+}
+.container
+{
+	text-align: center;
+	
+}
+.header
+{
+	min-height: 50px;
+	background-color: #d8ff63;
+	
+.navigation
+{
+	background-color: #ff815e;
+}
+.sidebar
+{
+	background-color: #007d17;
+	float: left;
+	min-width: 25%;
+	min-height: 600px;
+}
+.content
+{
+	background-color: #bdbdbd;
+
+	min-height: 600px;
+}
+.footer
+{
+	background-color: #001dad;
+}

@@ -1,0 +1,5 @@
+body{ 
+    background-image: url(bananas.png); /* Путь к фоновому рисунку */
+    background-position: left top; /* Положение фона */
+    background-repeat: round; /* Повторяем фон по горизонтали */
+}

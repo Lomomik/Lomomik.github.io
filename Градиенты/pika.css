@@ -1,0 +1,87 @@
+body
+{
+	background: linear-gradient(to left, #FC7D7B, #000);
+}
+.header
+{
+	display: block;
+	color: white;
+	text-align: center;
+	min-width: 100%;
+	min-height: 20vh;
+	background: radial-gradient(ellipse, #000, #fb83fa 50%);
+}
+.center
+{
+	display: block;
+	margin-left: 15%;
+	min-height: 140vh;
+	max-width: 70%;
+	background-color: #fff7d6;
+	text-align: center;
+}
+h1
+{
+	color: #45145A ;
+	text-shadow: #FF5300 2px 3px 4px;
+}
+.center > div
+{
+	border-radius: 7px;
+	min-width: 100%;
+	min-height: 20vh;
+	background-color: purple;
+	margin-top: 5vh;
+}
+.t1
+{
+	box-shadow: inset 2px 2px 0px 1px #000;
+}
+.t2
+{
+	box-shadow: inset -1px -1px 0px 2px #000;
+}
+.t3
+{
+	box-shadow: inset 0px 0px 0px 3px #000;
+}
+p
+{
+	font-size: 20pt;
+	color: #009245;
+	text-shadow: #FCEE21 2px 3px 4px;
+}
+.tip
+{
+	width: 30%;
+	position: relative;
+	float: left;
+	z-index: 1;
+}
+.down
+{
+	position: absolute;
+	width: 15%;
+	right: 200px;
+	z-index: 1;
+}
+.top
+{
+	position: relative;
+	width: 30%;
+	float: right;
+	margin-top: 100px;
+	z-index: 3;
+}
+.down1
+{
+	position: absolute;
+	width: 15%;
+	margin-left: -200px;
+	margin-top: 50px;
+	z-index: 4;
+}
+
+
+
+

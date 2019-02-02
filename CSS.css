@@ -1,0 +1,102 @@
+div{background-image: url(http://wallpaperget.com/images/red-gradient-wallpaper-28.jpg);}
+	
+.pic{
+display:block;
+margin:auto;
+}
+#pic1{
+position: relative;
+Margin: 35px 70px;
+width: 35%;
+  max-width: 550px;
+  box-shadow:
+   -15px -15px 2px -5px rgba(200, 0, 0,.5),
+   -15px 15px 2px -5px rgba(255, 0, 0,.5),
+   15px -15px 2px -5px rgba(117, 20, 20,.5),
+   15px 15px 2px -5px rgba(77,0,0,.5);
+}
+#pic2{
+max-width: 70%;
+height: 75%;
+position: relative;
+Margin: 4px 200px;
+  box-shadow:
+   -15px -15px 2px -5px rgba(200, 0, 0,.5),
+   -15px 15px 2px -5px rgba(255, 0, 0,.5),
+   15px -15px 2px -5px rgba(117, 20, 20,.5),
+   15px 15px 2px -5px rgba(77,0,0,.5);
+}
+h1{
+	text-align: center;
+	font-family: "Times New Roman", Arial, Verdana;
+	font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#time{
+  position: relative;
+  bottom:40px;
+  left:0px;
+}
+#text{
+  background: none;
+  position: relative;
+  height: 150px;
+  width: 400px;
+  bottom:275px;
+  left:540px;
+  font-family: "Open Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  color: black;
+  
+}
+#rag{
+
+}
+#tor{
+	background: #999999;
+	height: 400px;
+	width: 1000px;
+    margin: auto;
+	box-shadow:
+  -1px 0px rgb(115,115,115), -1px 1px rgb(66,66,66),
+  -2px 1px rgb(114,114,114), -2px 2px rgb(65,65,65),
+  -3px 2px rgb(113,113,113), -3px 3px rgb(64,64,64),
+  -4px 3px rgb(112,112,112), -4px 4px rgb(63,63,63),
+  -5px 4px rgb(111,111,111), -5px 5px rgb(62,62,62),
+  -6px 5px rgb(110,110,110), -6px 6px rgb(61,61,61),
+  -7px 6px rgb(109,109,109), -7px 7px rgb(60,60,60),
+  -8px 7px rgb(108,108,108), -8px 8px rgb(59,59,59),
+  -9px 8px rgb(107,107,107), -9px 9px rgb(58,58,58);
+
+}
+#Menu {
+    background: #990000;
+    position: relative;
+    height: 40px;
+    margin: 30px 0;
+	
+}
+#Menu ul {
+
+    list-style: none;
+    margin:5;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+    color: #990000;
+    font: 20px Arial green, Helvetica, sans-serif;
+    height: 40px;
+	
+}
+#Menu ul li {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin: 0 10px;
+    height: 40px;
+}
+
+

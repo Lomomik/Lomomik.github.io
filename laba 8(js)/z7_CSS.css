@@ -1,0 +1,135 @@
+body
+{
+    background: linear-gradient(to right, #333333, #5A5454);
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    padding: 0;
+}
+span
+{
+	color: red;
+}
+form
+{
+	margin-left: 23%;
+}
+.anketa
+{
+	padding: 5px;
+	position: absolute;
+	left: 30%;
+	top: 1vh;
+	background: #999999;
+	min-height: 35vh;
+	min-width: 50vw;
+    margin: auto;
+	box-shadow:
+	  -1px 0px rgb(115,115,115), -1px 1px rgb(66,66,66),
+	  -2px 1px rgb(114,114,114), -2px 2px rgb(65,65,65),
+	  -3px 2px rgb(113,113,113), -3px 3px rgb(64,64,64),
+	  -4px 3px rgb(112,112,112), -4px 4px rgb(63,63,63),
+	  -5px 4px rgb(111,111,111), -5px 5px rgb(62,62,62),
+	  -6px 5px rgb(110,110,110), -6px 6px rgb(61,61,61),
+	  -7px 6px rgb(109,109,109), -7px 7px rgb(60,60,60),
+	  -8px 7px rgb(108,108,108), -8px 8px rgb(59,59,59),
+	  -9px 8px rgb(107,107,107), -9px 9px rgb(58,58,58);
+	border-radius: 14px 14px 7px 7px;
+	z-index: 1;
+}
+.anketa > div
+{
+	margin-top: 10px;
+	margin-left: 25%;
+}
+.anketa p
+{
+	font-size: 20px;
+	margin-bottom: 2px;
+}
+input, select
+{
+	font-size: 18px;
+	min-height: 20px;
+	border-right: none;
+	border-bottom: 1px dashed black;
+	background-color: #999999;
+}
+input:focus
+{
+	outline: none;
+
+	transition: all 0.5s ease-out; 
+	border-bottom: 1px solid red;
+}
+select:focus
+{
+	outline: none;
+	
+	transition: all 0.5s ease-out; 
+	border-bottom: 1px solid red;
+}
+textarea
+{
+	background-color: #E0E0E0;
+	border: 1px dashed black;
+	font-size: 16px;
+	padding: 3px;
+	width: 260px;
+	height: 200px;
+	color: black;
+}
+select
+{ 
+	background-color: #898989;
+}
+#butt
+{
+	margin-bottom: 5px;
+}
+#butt > input
+{
+	margin-right: 1px;
+	min-width: 26px;
+	background-color: white;
+}
+#butt > input:first-child
+{
+	text-decoration: underline;
+	
+}
+#butt > input:nth-child(2)
+{
+	font-weight: bold;
+}
+#butt > input:focus
+{
+	border: 1px solid red;
+}
+.anketa > input 
+{
+	width: 23%;
+	border: 1px solid #999999;
+	margin-left: 25%;
+}
+#send
+{
+	margin-top: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	min-width: 115px;
+	background-color: white;
+	font-size: 15px;
+}
+#comics > option:hover
+{
+	background-color: none;
+	border-bottom: 1px solid red;
+}
+#btn5
+{
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+#area
+{
+	color: black;
+}

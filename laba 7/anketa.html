@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body background-color="green">
+ <div class="form">
+ 	<span class="star">*</span>Обязательно для заполнения<br>
+ 	<br>
+	<form method="post">
+		<fieldset id="field">
+			<legend>Введите персональную информацию</legend>
+			<div class="lich">
+				<p>Фамилия<span class="star">*</span></p><br>
+				<p>Имя<span class="star">*</span></p><br>
+				<p>Отчество</p><br>
+				<p>E-mail<span class="star">*</span></p> <br>
+				<p>Пароль<span class="star">*</span></p><br>
+			</div>
+			<div class="numb">
+				<input type="text" name="fam" required placeholder="Введите фамилию">
+				<input type="text" name="name" required placeholder="Введите имя">
+				<input type="text" name="otch" placeholder="Введите отчество">
+				<input type="email" name="email" required placeholder="Введите E-mail">
+				<input type="password" name="pass" required placeholder="Введите password">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Выберите страну<span class="star">*</span></legend>
+			<select name="world" id="">
+				<option name="country">Russia</option>
+				<option name="country">Auganistan</option>
+				<option name="country">KNDR</option>
+				<option name="country">USA</option>
+				<option name="country">Ukraine</option>
+				<option name="country">Belorusia</option>
+				<option name="country">Kazachstan</option>
+				<option name="country">China</option>
+				<option name="country">Japan</option>
+				<option name="country">France</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Выберите город<span class="star">*</span></legend>
+			<input type="radio" name="city" checked="">Rubtsovsck<Br>
+			<input type="radio" name="city">Novosibirsck<Br>
+			<input type="radio" name="city">Moscow<Br>
+			<input type="radio" name="city">Saint-Peterburg<Br>
+			<input type="radio" name="city">Rostov-na-donu<Br>
+			<input type="radio" name="city">Stambul<Br>
+		</fieldset>
+			
+
+		<fieldset>
+			<legend>Выберите язык<span class="star">*</span></legend>
+			<input type="checkbox" name="rus">Russian<Br>
+			<input type="checkbox" name="eng">English<Br>
+			<input type="checkbox" name="ukr">Ukrainan<Br>
+			<input type="checkbox" name="chin">Chinian<Br>
+			<input type="checkbox" name="jap">Japanian<Br>
+		</fieldset>
+		
+		
+		<fieldset>
+			<legend>Выберите профессию<span class="star">*</span></legend>
+			<select multiple size="4">
+			    <option name="trck">Тракторист</option>
+			    <option name="actr">Актер</option>
+			    <option name="agent">Агент</option>
+			    <option name="pol">Полицейский</option>
+			    <option name="prog">Программист</option>
+			    <option name="doc">Доктор</option>
+			    <option name="dvor">Дворник</option>
+			    <option name="pred">Преподаватель</option>
+			    <option name="banck">Банкир</option>
+			    <option name="pog">Пожарный</option>
+		    </select><Br>
+		</fieldset>
+		
+	   
+	
+   		<fieldset>
+   			<legend>Дополнительная информация</legend>
+   			<textarea name="dopinf" rows="7" cols="44"></textarea>
+   		</fieldset>
+
+	<input id="prodId" studen="|Ilya_and_Leha|" type="hidden" value="2019-34-21">
+
+	<div class="button">
+		<input type="image" src="imgbutton.gif" class="f">
+		<input type="image" src="clear-button-clipart-1.jpg">
+	</div>
+	</form>
+ </div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
