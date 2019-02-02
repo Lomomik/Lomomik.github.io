@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="z7_CSS.css">
+</head>
+<body>
+
+	<div class="anketa">
+		<form method="post" onsubmit="return alert('Спасибо, мы Вам перезвоним!');">
+			<div>
+				<p>Имя <span>*</span></p>
+				<input type="text" name="fam" required placeholder="Введите имя" ">
+			</div>
+			<div>
+				<p>E-mail:</p>
+				<input type="text" name="fem">
+			</div>
+			<div>
+				<p>Выберите лучший комикс: <span>*</span></p>
+				<select id="comics" required>
+					<option value="batman">Batman</option>
+					<option value="superman">Superman</option>
+					<option value="supergirl">Supergirl</option>
+					<option value="spider-man">Spider-man</option>
+				</select>
+			</div>
+			<div>
+				<p>Пол:</p>
+				<input type="radio" name="pol">Мужской
+				<input type="radio" name="pol">Женский
+			</div>
+			<div>
+				<p id="gg">Комментарии:</p>
+				<div id="butt">
+					<input id="btn1" type="button" value="F" spaceholder="F" onclick="modUnder()">
+					<input id="btn2" type="button" value="Ж" onclick="modBold()">
+					<input id="btn3" type="button" value="28px" onclick="modPlus(0)">
+					<input id="btn3" type="button" value="12px" onclick="modPlus(1)">
+					<input id="btn4" type="button" value="14px" onclick="modPlus(-1)">
+					<input id="btn5" type="button" value="A" onclick="modColor()">
+				</div>
+				<textarea name="ar" id="area" cols="27" rows="10"></textarea>
+
+			</div>
+			<input id="send" type="submit" value="ОТПРАВИТЬ" onclick="Send()">
+		</form>
+		
+	</div>
+
+	<script language="JavaScript">
+		function modBold() {
+			if (document.all["area"].style.fontWeight == "bold"){
+				document.all["area"].style.fontWeight = "normal";
+			}else {
+				document.all["area"].style.fontWeight = "bold";
+			}
+		}	
+		function modUnder() {
+			if (document.all["area"].style.textDecoration=="underline"){
+				document.all["area"].style.textDecoration="none";
+			}else {
+				document.all["area"].style.textDecoration="underline";
+			}
+				
+		}
+		function modPlus(action){
+			if(action == 0){
+				document.all["area"].style.fontSize="28px";
+			}
+			if (action == 1) {
+				document.all["area"].style.fontSize="12px";
+			}
+			if (action == -1) {
+				document.all["area"].style.fontSize="16px";
+			}
+		}
+		function modColor()
+		{   if (document.all["area"].style.color == "black") {
+				document.all["area"].style.color = "green";
+			}
+			if (document.all["area"].style.color != "red") {
+				document.all["area"].style.color = "red";
+			}else {
+				if (document.all["area"].style.color == "red") {
+					document.all["area"].style.color = "black";
+				}
+			}
+			
+		}
+			
+	</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

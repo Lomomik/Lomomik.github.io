@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="z8.css">
+</head>
+<body>
+ <div class="form">
+ 	<span class="star">*</span>Обязательно для заполнения<br>
+ 	<br>
+	<form method="post" required>
+		<fieldset>
+			<legend>Выберите фильм<span class="star">*</span></legend>
+			<select name="world" id="cinema" required="">
+				<option value="100">Капитан Марвел</option>
+				<option value="200">Человек-Муравей и Оса</option>
+				<option value="300">Мстители: Война Бесконечности</option>
+				<option value="400">Тор: Рагнарёк</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Выберите язык<span class="star">*</span></legend>
+			<input type="radio" value="50" name="lang">Русский<Br>
+			<input type="radio" value="150" name="lang">Английский<Br>
+			<input type="radio" value="250" name="lang">Украинский<Br>
+		</fieldset>
+		<fieldset>
+			<legend>Выберите качество<span class="star">*</span></legend>
+			<select name="world" id="qual">
+				<option value="500" name="quality" >DVD</option>
+				<option value="1500" name="quality">BLUE-RAY</option>
+				<option value="200" name="quality">CAMRIP</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Добавление субтитров</legend>
+			<input value="200" type="radio" name="sub">Русский<br>
+			<input value="200" type="radio" name="sub">Английский<br>
+			<input value="200" type="radio" name="sub">Украинский<br>
+		</fieldset>
+		<fieldset>
+			<legend>Добавление дополнительных материалов</legend>
+			<input type="checkbox" value="700" id="int">Интервью с актерами<br>
+			<input type="checkbox" value="400" id="int">Интервью с режиссерами<Br>
+			<input type="checkbox" value="400" id="int">Интервью с продюсером<Br>
+		</fieldset>
+	   <fieldset>
+			<legend>Выберите район Новосибирска<span class="star">*</span></legend>
+			<select name="or" id="region">
+				<option value="1.2">Кировский</option>
+				<option value="1.1">Лениский</option>
+				<option value="1.4">Заельцовский</option>
+				<option value="1">Центральный</option>
+				<option value="1.6">Краснообск</option>
+			</select>
+
+		</fieldset>
+		<fieldset>
+			<legend>Выберите способ доставки<span class="star">*</span></legend>
+			<select name="dostavka" id="dos">
+				<option value="1.1">Почта России</option>
+				<option value="1.5">UPS</option>
+				<option value="1.4">Boxberry</option>
+				<option value="1.3">DPD</option>
+				<option value="1.2">CDEC</option>
+			</select>
+			<select name="wo" id="tip">
+				<option value="1">Самовывоз</option>
+				<option value="1.05">Курьер</option>
+			</select>
+
+		</fieldset>
+		<fieldset id="field">
+			<legend>Введите персональную информацию</legend>
+			<div class="lich">
+				<p>Фамилия<span class="star">*</span></p><br>
+				<p>Имя<span class="star">*</span></p><br>
+				<p>Отчество</p><br>
+				<p>E-mail<span class="star">*</span></p> <br>
+			</div>
+			<div class="numb">
+				<input type="text" name="fam" required placeholder="Введите фамилию">
+				<input type="text" name="name" required placeholder="Введите имя">
+				<input type="text" name="otch" placeholder="Введите отчество">
+				<input type="email" name="email" required placeholder="Введите E-mail">
+				
+			</div>
+		</fieldset>
+   		<fieldset>
+   			<legend>Дополнительная информация</legend>
+   			<textarea name="dopinf" rows="7" cols="44"></textarea>
+   		</fieldset>
+		<input id="send" type="submit" value="ОТПРАВИТЬ" onclick="Film()" onclick="language()">
+
+
+	
+	</form>
+ </div>
+ 	<script language="JavaScript">
+ 		function Film(){
+ 			var sum = document.getElementById("cinema").value;
+ 			sum = parseInt(sum) + parseInt(document.querySelector('input[name="lang"]:checked').value);
+ 			sum = parseInt(sum) + parseInt(document.getElementById("qual").value);
+ 			sum = parseInt(sum) + parseInt(document.querySelector('input[name="sub"]:checked').value);
+ 			sum = parseInt(sum) + parseInt(document.querySelector('input[id="int"]:checked').value);
+			sum = parseInt(sum) * document.getElementById("region").value;
+ 			alert(parseInt(sum) + " рублей");
+ 		}
+ 		
+ 	</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

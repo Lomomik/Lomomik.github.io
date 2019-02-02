@@ -1,0 +1,28 @@
+</head>
+<body>
+
+	<p id="p1">Этот пример показывает как можно изменить размер данного абзаца</p>
+	<br><b><i>Размер шрифта:</i></b>
+	<select id="selFamily" size="1" onchange="modFamily();">
+		<option value="times" selected>Times New Roman
+		<option value="arial">Arial
+		<option value="courier">Courier
+	</select>
+
+	<b><i>Color:</i></b>
+	<input id="txtColor" type="Text" size=10 value="red">
+	<input id="btnColor" type="button" value="Primenit" onclick="modColor();">
+	
+
+
+	<script language="JavaScript">
+		function modFamily(){
+			document.all["p1"].style.fontFamily=document.all["selFamily"].value;}
+
+
+		function modColor(){
+			document.all["p1"].style.color=document.all["txtColor"].value;}
+	</script>
+	
+</body>
+</html>
