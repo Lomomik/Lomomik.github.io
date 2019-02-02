@@ -1,13 +1,20 @@
-div{background-image: url(http://wallpaperget.com/images/red-gradient-wallpaper-28.jpg);}
+body
+{
+  background: linear-gradient(to right, #333333, #5A5454);
+}
+div
+{
+  background-image: url(http://wallpaperget.com/images/red-gradient-wallpaper-28.jpg);
+}
 	
 .pic{
-display:block;
-margin:auto;
+  display:block;
+  margin:auto;
 }
 #pic1{
-position: relative;
-Margin: 35px 70px;
-width: 35%;
+  position: relative;
+  Margin: 35px 70px;
+  width: 35%;
   max-width: 550px;
   box-shadow:
    -15px -15px 2px -5px rgba(200, 0, 0,.5),
@@ -16,29 +23,42 @@ width: 35%;
    15px 15px 2px -5px rgba(77,0,0,.5);
 }
 #pic2{
-max-width: 70%;
-height: 75%;
-position: relative;
-Margin: 4px 200px;
+  max-width: 70%;
+  height: 75%;
+  position: relative;
+  margin-left: -5vw;
   box-shadow:
    -15px -15px 2px -5px rgba(200, 0, 0,.5),
    -15px 15px 2px -5px rgba(255, 0, 0,.5),
    15px -15px 2px -5px rgba(117, 20, 20,.5),
    15px 15px 2px -5px rgba(77,0,0,.5);
+   z-index: 3;
+}
+#pic3
+{
+  max-width: 70%;
+  height: 75%;
+  position: relative;
+  margin-left: 200px;
+  box-shadow:
+  -15px -15px 2px -5px rgba(200, 0, 0,.5),
+  -15px 15px 2px -5px rgba(255, 0, 0,.5),
+  15px -15px 2px -5px rgba(117, 20, 20,.5),
+  15px 15px 2px -5px rgba(77,0,0,.5);
 }
 h1{
 	text-align: center;
 	font-family: "Times New Roman", Arial, Verdana;
 	font-size: 40px;
 }
-a{
-    text-decoration: none;
-    color: black;
+h4
+{
+  display: inline-block;
+  max-width: 200px;
 }
 #time{
-  position: relative;
-  bottom:40px;
-  left:0px;
+  float: right;
+  
 }
 #text{
   background: none;
@@ -52,7 +72,7 @@ a{
   
 }
 #rag{
-
+   border-radius: 14px;
 }
 #tor{
 	background: #999999;
@@ -69,34 +89,217 @@ a{
   -7px 6px rgb(109,109,109), -7px 7px rgb(60,60,60),
   -8px 7px rgb(108,108,108), -8px 8px rgb(59,59,59),
   -9px 8px rgb(107,107,107), -9px 9px rgb(58,58,58);
+  border-radius: 14px 14px 7px 7px;
+  z-index: 1;
+
 
 }
-#Menu {
-    background: #990000;
-    position: relative;
+
+.magneto
+{
+  text-shadow: #FCEE21 1px 4px 1px;
+}
+.view
+{
+  text-shadow: rgb(148, 0, 0) 1px 1px 1px;
+}
+.podval
+{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  background: #999999;
+height: 50px;
+  width: 300px;
+    margin: auto;
+  box-shadow:
+  -1px 0px rgb(115,115,115), -1px 1px rgb(66,66,66),
+  -2px 1px rgb(114,114,114), -2px 2px rgb(65,65,65),
+  -3px 2px rgb(113,113,113), -3px 3px rgb(64,64,64),
+  -4px 3px rgb(112,112,112), -4px 4px rgb(63,63,63),
+  -5px 4px rgb(111,111,111), -5px 5px rgb(62,62,62),
+  -6px 5px rgb(110,110,110), -6px 6px rgb(61,61,61),
+  -7px 6px rgb(109,109,109), -7px 7px rgb(60,60,60),
+  -8px 7px rgb(108,108,108), -8px 8px rgb(59,59,59),
+  -9px 8px rgb(107,107,107), -9px 9px rgb(58,58,58);
+  border-radius: 7px;
+}
+.podval > p
+{
+  position: relative;
+  font-size: 25px;
+  font-family: "Times New Roman", Arial, Verdana;
+  text-align: center;
+  margin-top: 10px;
+}
+#x2
+{
+  position: relative;
+  float: left;
+  max-width: 195px;
+  max-height: 300px;
+  margin-left: -5vw;
+  box-shadow:
+   -15px -15px 2px -5px rgba(200, 0, 0,.5),
+   -15px 15px 2px -5px rgba(255, 0, 0,.5),
+   15px -15px 2px -5px rgba(117, 20, 20,.5),
+   15px 15px 2px -5px rgba(77,0,0,.5);
+  z-index: 2;
+}
+#x1
+{
+  position: relative;
+  float: left;
+  max-width: 195px;
+  max-height: 300px;
+  margin-left: 3vh;
+  box-shadow:
+   -15px -15px 2px -5px rgba(200, 0, 0,.5),
+   -15px 15px 2px -5px rgba(255, 0, 0,.5),
+   15px -15px 2px -5px rgba(117, 20, 20,.5),
+   15px 15px 2px -5px rgba(77,0,0,.5);
+  z-index: 1;
+}
+.Menu
+{
+  background: radial-gradient(ellipse closest-side at 50% 50%, #000, #990000);
+}
+.Menu ul
+{
+  list-style: none;
+}
+.Menu > ul
+{
+  display: flex;
+  justify-content: center;
+  max-height: 50px;
+}
+.Menu > ul > li
+{
+  min-width: 170.59px;
+}
+.Menu > ul li a{
+  display: block;
+  padding: 15px 10px 15px 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  min-width: 123px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+.Menu li a:hover
+{
+  background-color: black;
+  transition: all 0.5s ease;
+  color: #990000;
+}
+.Menu li ul
+{
+  padding: 0;
+  margin-left: 0px;
+  display: none;
+  position: absolute;
+  background-color: #990000;
+}
+.Menu > ul > li:hover > ul
+{
+  display: block;
+}
+.Menu li > ul li ul
+{
+  display: none;
+  position: absolute;
+  left: 170.59px;
+  top: 50px;
+  min-width: 123px;
+  text-align: center;
+}
+.Menu li ul li:hover > ul
+{
+  display: block;
+}
+
+/*a{
+    text-decoration: none;
+    color: black;
+}
+.Menu 
+{
+    background: radial-gradient(ellipse closest-side at 50% 50%, rgb(217, 204, 204), #990000);
     height: 40px;
     margin: 30px 0;
-	
 }
-#Menu ul {
-
-    list-style: none;
-    margin:5;
-    padding: 0;
-    position: relative;
-    left: 50%;
-    float: left;
-    color: #990000;
-    font: 20px Arial green, Helvetica, sans-serif;
-    height: 40px;
-	
+ul.main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 50vw;
+  color: #990000;
+  font: 20px Arial green, Helvetica, sans-serif;
+  min-height: 40px;
 }
-#Menu ul li {
-    position: relative;
-    left: -50%;
-    float: left;
-    margin: 0 10px;
-    height: 40px;
+ul.main li
+{
+  list-style: none;
+  position: relative;
+  
 }
-
-
+ul.main li a
+{
+  position: relative;
+  display: block;
+  left: -50%;
+  float: left;
+  margin-right: 10px;
+  height: 40px;
+  margin-right: 5vw;
+  display: block;
+}    
+ul.main li
+{
+  list-style: none;
+  position: absolute;
+}
+ul.main li ul{
+  list-style: none;
+  display: none;
+  position: absolute;
+  right: 200px;
+  min-height: 100px;
+  min-width: 50px;
+}
+ul.main li:hover ul
+{
+  display: block;
+  position: absolute;
+  top: 20px;
+  min-width: 200px;
+}
+ul.main li ul li
+{
+  display: none;
+  background: #990000;
+  min-width: 150px;
+  padding: 5px;
+  z-index: 10;
+}
+ul.main li ul li:hover ul
+{
+  display: block;
+  position: absolute;
+  background: #990000;
+  min-width: 150px;
+  padding: 5px;
+  z-index: 10;
+}
+ul.main li ul li ul
+{
+  display: none;
+  background: #990000;
+  min-width: 150px;
+  padding: 5px;
+  z-index: 10;
+  color: black;
+}*/
